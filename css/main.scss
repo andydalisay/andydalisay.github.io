@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Jost:300,300i,400,400i,700,700i&display=swap');
 @import url('https://use.typekit.net/cke6chv.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin:0;
     font-family: 'Jost', sans-serif;
@@ -179,7 +183,30 @@ footer {
     }
 }
 
-
+#home {
+    height: 700px;
+    background: pink;
+    display: inline-block;
+    width: 100%;
+}
+#works{
+    height: 700px;
+    background: yellow;
+    display: inline-block;
+    width: 100%;
+}
+#about{
+    height: 700px;
+    background: red;
+    display: inline-block;
+    width: 100%;
+}
+#contact{
+    height: 700px;
+    background: green;
+    display: inline-block;
+    width: 100%;
+}
 
 section {
     padding: 7em;
@@ -198,6 +225,19 @@ section {
             bottom: 25%;
             height:50%;
             width: auto;
+        }
+        
+        /*
+        #letters {'pi
+            display: flex;
+            justify-content: space-between;
+        }
+        */
+        #h {
+            transform: matrix(0.91,-0.42,0.42,0.91,10,10);
+            width: 10vw;
+            max-width: 20%;
+            height: auto;
         }
     }
     &:nth-of-type(2) {
