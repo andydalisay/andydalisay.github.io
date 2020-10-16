@@ -183,31 +183,6 @@ footer {
     }
 }
 
-#home {
-    height: 700px;
-    background: pink;
-    display: inline-block;
-    width: 100%;
-}
-#works{
-    height: 700px;
-    background: yellow;
-    display: inline-block;
-    width: 100%;
-}
-#about{
-    height: 700px;
-    background: red;
-    display: inline-block;
-    width: 100%;
-}
-#contact{
-    height: 700px;
-    background: green;
-    display: inline-block;
-    width: 100%;
-}
-
 section {
     padding: 7em;
     height: calc(100vh - 14em);
