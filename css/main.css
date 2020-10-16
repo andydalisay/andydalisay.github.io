@@ -1,133 +1,136 @@
-@import url("https://fonts.googleapis.com/css?family=Jost:300,300i,400,400i,700,700i&display=swap");
-@import url("https://use.typekit.net/cke6chv.css");
+@import url('https://fonts.googleapis.com/css?family=Jost:300,300i,400,400i,700,700i&display=swap');
+@import url('https://use.typekit.net/cke6chv.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  font-family: 'Jost', sans-serif;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+    margin:0;
+    font-family: 'Jost', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  background-color: #E4F6FA;
-  padding-top: 11px;
-  padding-bottom: 2px;
-  left: 0;
-  top: 0;
-  z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #E4F6FA;
+    padding-top: 11px;
+    padding-bottom: 2px;
+    left: 0 ;
+    top: 0 ;
+    z-index: 1 ;
 }
 
 footer {
-  position: fixed;
-  width: 100%;
-  height: 30px;
-  background-color: #E4F6FA;
-  padding: 8px;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #E4F6FA;
+    padding: 8px;
+    left: 0 ;
+    bottom: 0 ;
+    z-index: 1 ;
 }
 
 .lefter {
-  position: fixed;
-  z-index: 1;
-  bottom: 5%;
-  width: 3.5%;
-  height: 90%;
-  background-color: #E4F6FA;
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    width:3.5%;
+    height:90%;
+    background-color: #E4F6FA;
 }
 
 .righter {
-  position: fixed;
-  z-index: 1;
-  left: 96.5%;
-  bottom: 5%;
-  width: 3.5%;
-  height: 90%;
-  background-color: #E4F6FA;
+    position: fixed;
+    z-index: 1;
+    left: 96.5%;
+    bottom: 5%;
+    width:3.5%;
+    height:90%;
+    background-color: #E4F6FA;
 }
 
-.sidebar {
-  position: absolute;
-  width: 300px;
-  height: 100px;
-  background: #000;
-  left: -300px;
-  -webkit-transition: .4s;
-  transition: .4s;
+.sidebar{
+    position: absolute;
+    width: 300px;
+    height:100px;
+    background: #000;
+    left: -300px;
+    transition: .4s;
 }
 
 .nav-side {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 650px;
-  background-color: #E4F6FA;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-  color: #000;
-  margin-left: -650px;
-  -webkit-transition: margin 400ms ease-in-out;
-  transition: margin 400ms ease-in-out;
-  /* Style the links inside the navigation bar */
-  /* Change the color of links on hover */
-}
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    max-width: 650px;
+    background-color: #E4F6FA;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+    margin-left: -650px;
+    transition: margin 400ms ease-in-out;
 
-.nav-side h3 {
-  font-weight: lighter;
-  font-style: italic;
-  font-stretch: ultra-expanded;
-  padding-left: 20px;
-}
+    h3 {
+        font-weight: lighter;
+        font-style: italic;
+        font-stretch: ultra-expanded;
+        padding-left: 20px;
 
-.nav-side .nav-side-links a {
-  color: #000;
-  text-align: center;
-  float: left;
-  clear: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  font-size: 40px;
-  margin: 5px;
-  margin-left: 200px;
-}
+    }
 
-.nav-side .nav-side-links a:nth-of-type(1) {
-  margin-top: 100px;
-}
+    /* Style the links inside the navigation bar */
+    .nav-side-links a {
+        color: #000;
+        text-align: center;
+        float: left;
+        clear: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 40px;
+        margin: 5px;
+        margin-left: 200px;
 
-.nav-side .nav-side-links a:hover {
-  background-color: #AADCE8;
-  color: black;
-}
+        &:nth-of-type(1) {
+            margin-top: 100px;
+        }
+    }
 
-.nav-side .nav-side-links a.active {
-  background-color: #5B96AD;
-  color: white;
+    /* Change the color of links on hover */
+    .nav-side-links a:hover {
+        background-color: #AADCE8;
+        color: black;
+    }
+
+    .nav-side-links a.active {
+        background-color: #5B96AD;
+        color: white;
+    }
 }
 
 .nav-side.nav-open {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .nav-toggle {
-  position: absolute;
-  z-index: 1;
-  right: -75px;
-  top: 45%;
-  width: auto;
-  height: 40px;
-  background-color: transparent;
-  line-height: 40px;
-  text-decoration: none;
-  text-align: right;
+    position: absolute;
+    z-index: 1;
+    right: -75px;
+    top: 45%;
+    width: auto;
+    height: 40px;
+    background-color: transparent;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: right; 
 }
 
 /*
@@ -139,98 +142,128 @@ footer {
 
 }
 */
+
+
 .brand-pic {
-  width: 11%;
-  height: 11%;
-  padding-left: 3.7%;
+    width: 11%;
+    height: 11%;
+    padding-left: 3.7%;
 }
 
 .twitter {
-  position: fixed;
-  z-index: 1;
-  bottom: 57%;
-  left: 97.2%;
-}
-
-.twitter .twitter-icon {
-  height: 70%;
-  width: 70%;
+    position: fixed;
+    z-index: 1;
+    bottom: 57%;
+    left: 97.2%;
+    .twitter-icon {
+        height: 70%;
+        width: 70%
+    }
 }
 
 .linkedin {
-  position: fixed;
-  z-index: 1;
-  bottom: 50%;
-  left: 97.2%;
-}
-
-.linkedin .linkedin-icon {
-  height: 70%;
-  width: 70%;
+    position: fixed;
+    z-index: 1;
+    bottom: 50%;
+    left: 97.2%;
+    .linkedin-icon {
+        height: 70%;
+        width: 70%
+    }
 }
 
 .gmail {
-  position: fixed;
-  z-index: 1;
-  bottom: 43%;
-  left: 96.3%;
+    position: fixed;
+    z-index: 1;
+    bottom: 43%;
+    left: 96.3%;
+    .gmail-icon {
+        height: 102%;
+        width: 102%
+    }
 }
 
-.gmail .gmail-icon {
-  height: 102%;
-  width: 102%;
+#home {
+    height: 700px;
+    background: pink;
+    display: inline-block;
+    width: 100%;
+}
+#works{
+    height: 700px;
+    background: yellow;
+    display: inline-block;
+    width: 100%;
+}
+#about{
+    height: 700px;
+    background: red;
+    display: inline-block;
+    width: 100%;
+}
+#contact{
+    height: 700px;
+    background: green;
+    display: inline-block;
+    width: 100%;
 }
 
 section {
-  padding: 7em;
-  height: calc(100vh - 14em);
-  color: white;
-  scroll-snap-align: start;
+    padding: 7em;
+    height: calc(100vh - 14em);
+    color: white;
+    scroll-snap-align: start;
+    
+    
+    &:nth-of-type(1) {
+        background: #E4F6FA;
+        background-image: url(../images/background.png);
+        .hello-wonky{
+            position: absolute;
+            z-index: 0;
+            left: 12%;
+            bottom: 25%;
+            height:50%;
+            width: auto;
+        }
+        
+        /*
+        #letters {'pi
+            display: flex;
+            justify-content: space-between;
+        }
+        */
+        #h {
+            transform: matrix(0.91,-0.42,0.42,0.91,10,10);
+            width: 10vw;
+            max-width: 20%;
+            height: auto;
+        }
+    }
+    &:nth-of-type(2) {
+        background: rgb(21, 139, 175);
+        .hello{
+            z-index: 0;
+            left: 30%;
+            bottom: 20%;
+            height:30%;
+            width: auto;
+        }
+        h3 {
+            bottom: 10%;
+        }
+        p {
+            bottom: 10%;
+        }
+    }
+    &:nth-of-type(3) {
+        background: #E4F6FA;
+    }
+    h3 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.2em;
+    }
 }
 
-section:nth-of-type(1) {
-  background: #E4F6FA;
-  background-image: url(../images/background.png);
-}
-
-section:nth-of-type(1) .hello-wonky {
-  position: absolute;
-  z-index: 0;
-  left: 12%;
-  bottom: 25%;
-  height: 50%;
-  width: auto;
-}
-
-section:nth-of-type(2) {
-  background: #158baf;
-}
-
-section:nth-of-type(2) .hello {
-  z-index: 0;
-  left: 30%;
-  bottom: 20%;
-  height: 30%;
-  width: auto;
-}
-
-section:nth-of-type(2) h3 {
-  bottom: 10%;
-}
-
-section:nth-of-type(2) p {
-  bottom: 10%;
-}
-
-section:nth-of-type(3) {
-  background: #E4F6FA;
-}
-
-section h3 {
-  font-size: 3em;
-}
-
-section p {
-  font-size: 1.2em;
-}
-/*# sourceMappingURL=main.css.map */
